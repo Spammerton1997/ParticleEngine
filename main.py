@@ -166,7 +166,7 @@ class Simulation:
 
                     movement_data = (movement_pos, deleted)
                     possible_movements.append(movement_data)
-                    if movement == [0, -1]:
+                    if movement == (0, -1):
                         move_down = movement_data
 
             deleted_self = False
@@ -183,6 +183,7 @@ class Simulation:
             
             deleted = False
             if possible_movements:
+                p_m_count = len(possible_movements)
                 moved = True
                 if move_down and (quickrand(100) <= move_down_chance - 1):
                     new_pos, deleted = move_down
@@ -191,7 +192,6 @@ class Simulation:
                         if (quickrand(100) >= movement_chance - 1):
                             continue
                     
-                    p_m_count = len(possible_movements)
                     if p_m_count == 1:
                         new_pos, deleted = possible_movements[0]
                     else:
