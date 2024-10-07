@@ -7,3 +7,7 @@ A simple python falling sand simulation game
 - Use WASD to move viewport
 - Use - and = to zoom in and out (I reccomend that you don't zoom out to much since it lags a lot)
 - Use the arrow keys to select an element
+
+# Requirements
+- Pygame
+- Numpy
