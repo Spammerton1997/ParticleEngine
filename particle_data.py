@@ -169,7 +169,7 @@ type_behaviours = {
 def new_part(life:int=0):
     return [-1, life]
 
-hot_parts = [10,3,17]
+hot_parts = [10,17]
 
 particle_data = [
     { # 0
