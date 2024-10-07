@@ -517,5 +517,5 @@ class Interface:
         pygame.quit()
 
 if __name__ == "__main__":
-    DEBUG = True
+    DEBUG = False
     interface = Interface()
