@@ -173,7 +173,7 @@ hot_parts = [10,3,17]
 
 particle_data = [
     { # 0
-        "name": "rock",
+        "name": "stone",
         "color": [90,90,90],
         "type": "solid",
         "created": new_part()
@@ -300,5 +300,13 @@ particle_data = [
         "movement_chance": 30,
         "update_func": melt,
         "created": new_part()
-    }
+    },
+    { # 18
+        "name": "rock",
+        "color": [60,60,60],
+        "type": "powder",
+        "movement_chance": 0,
+        "render": "powder",
+        "created": new_part()
+    },
 ]

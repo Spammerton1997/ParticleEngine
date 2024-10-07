@@ -184,14 +184,14 @@ class Simulation:
             deleted = False
             if possible_movements:
                 p_m_count = len(possible_movements)
-                moved = True
                 if move_down and (quickrand(100) <= move_down_chance - 1):
                     new_pos, deleted = move_down
+                    moved = True
                 else:
                     if not move_down:
                         if (quickrand(100) >= movement_chance - 1):
                             continue
-                    
+                    moved = True
                     if p_m_count == 1:
                         new_pos, deleted = possible_movements[0]
                     else:
@@ -517,5 +517,5 @@ class Interface:
         pygame.quit()
 
 if __name__ == "__main__":
-    DEBUG = False
+    DEBUG = True
     interface = Interface()
