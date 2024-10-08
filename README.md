@@ -1,4 +1,4 @@
-![Screenshot 2024-10-08 203619.png](Screenshot 2024-10-08 203619.png)
+![Screenshot](https://github.com/Spammerton1997/ParticleEngine/blob/main/screenshot.png)
 
 # ParticleEngine
 A simple python falling sand simulation game
